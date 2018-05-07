@@ -1,6 +1,6 @@
 function checkGithubURL(url) {
   // basic regex
-  if (!/^https:\/\/github\.com\/[a-zA-Z0-9\-]{4,39}\/[a-zA-Z0-9\-]{3,100}\/?$/.test(url)) {
+  if (!/^https:\/\/github\.com\/[a-zA-Z0-9\-_]{4,39}\/[a-zA-Z0-9\-_]{3,100}\/?$/.test(url)) {
     return false
   }
   // 2) check if repo exist
